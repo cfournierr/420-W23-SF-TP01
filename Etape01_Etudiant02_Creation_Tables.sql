@@ -5,7 +5,12 @@
  
  Date  02-07-2020                                            
 */
+<<<<<<< HEAD
 
+=======
+-- DROP DATABASE IF EXISTS PosteClientDFC;
+-- CREATE DATABASE IF NOT EXISTS PosteClientDFC;
+>>>>>>> 822cbc84c514818765b208efddb0911a4b716ccb
 
 USE PosteClientDFC;
 -- -----------------------------------------------------
@@ -51,7 +56,8 @@ CREATE TABLE usager_has_poste(
     )ENGINE = InnoDB;
     
 
- 
+ ALTER TABLE usager
+ ADD FOREIGN KEY (local_id_local)REFERENCES local(id_local)
  
 
 
