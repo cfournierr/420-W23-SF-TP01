@@ -5,8 +5,8 @@
  
  Date  02-07-2020                                            
 */
-DROP DATABASE IF EXISTS PosteClientDFC;
-CREATE DATABASE IF NOT EXISTS PosteClientDFC;
+-- DROP DATABASE IF EXISTS PosteClientDFC;
+-- CREATE DATABASE IF NOT EXISTS PosteClientDFC;
 
 USE PosteClientDFC;
 -- -----------------------------------------------------
