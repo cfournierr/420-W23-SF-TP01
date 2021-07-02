@@ -52,7 +52,8 @@ CREATE TABLE usager_has_poste(
     )ENGINE = InnoDB;
     
 
- 
+ ALTER TABLE usager
+ ADD FOREIGN KEY (local_id_local)REFERENCES local(id_local)
  
 
 
