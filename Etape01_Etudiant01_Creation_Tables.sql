@@ -19,7 +19,7 @@ CREATE TABLE poste (
         nb_ram_mo VARCHAR(45) NOT NULL, 
         tail_disque_giga INT UNSIGNED NOT NULL, 
         id_fabricant INT UNSIGNED NOT NULL,
-        id_local INT UNSIGNED NOT NULL
+        id_local INT UNSIGNED 
 
 ) ENGINE = InnoDB;
 
@@ -33,8 +33,7 @@ CREATE TABLE peripherique (
 		id_peripherique INT UNSIGNED NOT NULL PRIMARY KEY,
         nom_peripherique VARCHAR(45) NOT NULL, 
         id_poste INT UNSIGNED NOT NULL,
-        id_fabricant INT UNSIGNED NOT NULL,
-        id_type_peripherique INT UNSIGNED NOT NULL
+        id_fabricant INT UNSIGNED NOT NULL
         
 ) ENGINE = InnoDB;
 
@@ -51,4 +50,6 @@ ADD FOREIGN KEY (id_local) REFERENCES local(id_local);
 ALTER TABLE peripherique
 ADD FOREIGN KEY (id_poste) REFERENCES poste(id_poste),
 ADD FOREIGN KEY (id_fabricant) REFERENCES fabricant(id_fabricant);
+
+
 

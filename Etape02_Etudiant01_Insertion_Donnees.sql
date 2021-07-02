@@ -252,3 +252,6 @@ FROM peripherique;
 
 SELECT*
 FROM local;
+
+SELECT*
+FROM fabricant;
