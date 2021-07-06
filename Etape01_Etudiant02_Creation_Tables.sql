@@ -9,7 +9,7 @@
 
 
 -- DROP DATABASE IF EXISTS PosteClientDFC;
-CREATE DATABASE IF NOT EXISTS PosteClientDFC;
+-- CREATE DATABASE IF NOT EXISTS PosteClientDFC;
 
 
 USE PosteClientDFC;
@@ -42,10 +42,10 @@ CREATE TABLE poste_has_logiciel(
     
 CREATE TABLE usager(
 	id_usager INT UNSIGNED NOT NULL,
-    nom_usager VARCHAR(45) NOT NULL,
-    prenom_usager VARCHAR(45) NOT NULL,
-    telephone_usager VARCHAR(15)NOT NULL,
-    local_id_local INT UNSIGNED NOT NULL,
+    nom_usager VARCHAR(45) ,
+    prenom_usager VARCHAR(45) ,
+    telephone_usager VARCHAR(15),
+    local_id_local INT UNSIGNED,
     PRIMARY KEY(id_usager)
     )ENGINE = InnoDB;
     
