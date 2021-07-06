@@ -32,8 +32,8 @@ CREATE TABLE local (
 CREATE TABLE peripherique (
 		id_peripherique INT UNSIGNED NOT NULL PRIMARY KEY,
         nom_peripherique VARCHAR(45) NOT NULL, 
-        id_poste INT UNSIGNED NOT NULL,
-        id_fabricant INT UNSIGNED NOT NULL
+        id_poste INT UNSIGNED,
+        id_fabricant INT UNSIGNED 
         
 ) ENGINE = InnoDB;
 
