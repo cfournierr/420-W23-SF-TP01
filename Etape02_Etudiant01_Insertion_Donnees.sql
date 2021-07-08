@@ -239,16 +239,3 @@ INSERT INTO local (id_local, nom_local)
 VALUES
 (1,'P-409'),(2,'P-418'),(3,'P-309'),(4,'P-308'),(5,'P-310'),(6,'P-416'),(7,'P-210'),(8,'P-211'),(9,'P-212'),(10,'P213');
 
-
-
-SELECT * 
-FROM poste;
-
-SELECT*
-FROM peripherique;
-
-SELECT*
-FROM local;
-
-SELECT*
-FROM fabricant;
