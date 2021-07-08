@@ -34,7 +34,15 @@ ADD CONSTRAINT nom_local_unique UNIQUE (nom_local);
 ALTER TABLE fabricant
 ADD CONSTRAINT nom_fabricant_unique UNIQUE (nom_fabricant);
 
+INSERT INTO type_peripherique (id_type_peripherique, nom_type_peripherique)
+VALUES 
+(1, 'Imprimantes' ),
+(2, 'Souris'),
+(3, 'Clavier'),
+(4, 'Écran');
 
+SELECT * FROM type_peripherique;
+		
 
 
 
