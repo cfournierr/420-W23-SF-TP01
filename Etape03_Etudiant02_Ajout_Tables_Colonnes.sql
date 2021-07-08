@@ -31,6 +31,8 @@ MODIFY nom_editeur VARCHAR(45) UNIQUE NOT NULL;
 
 
 
+INSERT INTO typeUsager(id_typeUsager,nom_statut)
+VALUES(1,'Professeur'),(2,'Employe'),(3,'Etudiant');
 
 
 
