@@ -19,11 +19,21 @@ FROM
 local;
 
 SELECT
-u.nom_usager AS "Nom d'usager",
-l.nom_local AS "Local",
-p.desc_poste AS 'Description du poste'
+CONCAT(u.nom_usager,",",u.prenom_usager)AS "Nom d'usager",
+loc.nom_local AS "Nom local",
+poste.desc_poste AS "Description du poste"
+FROM usager_has_poste AS uhp
+INNER JOIN usager u ON uhp.id_usager = u.id_usager
+INNER JOIN local loc ON u.local_id_local = loc.id_local
+INNER JOIN poste ON uhp.id_poste = poste.id_poste
+ORDER BY u.nom_usager;
 
-from 
-Usager AS u,
-local AS l,
-poste AS p;
+
+
+
+
+
+
+
+
+
