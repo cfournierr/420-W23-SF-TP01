@@ -55,26 +55,7 @@ CREATE TABLE usager_has_poste(
     id_poste INT UNSIGNED NOT NULL
     )ENGINE = InnoDB;
  
- /*
- 
-ALTER TABLE poste_has_logiciel
-ADD PRIMARY KEY(id_poste,id_logiciel);
 
-ALTER TABLE poste_has_logiciel
-ADD FOREIGN KEY(id_logiciel)references logiciel(id_logiciel);
-
-ALTER TABLE poste_has_logiciel
-ADD FOREIGN KEY (id_poste)references poste(id_poste);
-
-SELECT* FROM poste_has_logiciel as pl
-LEFT JOIN poste as p
-ON p.id_poste = pl.id_poste;
-
-SELECT*FROM poste;
-
- ALTER TABLE usager
- ADD FOREIGN KEY (local_id_local)REFERENCES local(id_local)
- */
 
 
 
