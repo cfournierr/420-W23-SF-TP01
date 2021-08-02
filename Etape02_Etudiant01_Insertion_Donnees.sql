@@ -10,6 +10,8 @@ USE PosteClientDFC;
 -- -----------------------------------------------------
 -- Étape 2 : Insertion des données                    --
 -- -----------------------------------------------------
+SET foreign_key_checks =0;
+
 INSERT INTO fabricant(id_fabricant, nom_fabricant)
 VALUES 
 (1,'HP'),
@@ -118,7 +120,7 @@ VALUES
 (108,'Nulla Magna Company'),
 (109,'Nunc Ac Sem LLP');
 
-SET foreign_key_checks =0;
+
 
 INSERT INTO peripherique (id_peripherique,nom_peripherique,id_poste) 
 VALUES
@@ -241,3 +243,4 @@ INSERT INTO local (id_local, nom_local)
 VALUES
 (1,'P-409'),(2,'P-418'),(3,'P-309'),(4,'P-308'),(5,'P-310'),(6,'P-416'),(7,'P-210'),(8,'P-211'),(9,'P-212'),(10,'P213');
 
+SET foreign_key_checks =1;
